@@ -11,7 +11,7 @@ const App = () => {
       <header className="flex justify-end px-8 mb-8">
         <button
           className="bg-olive-800 text-white uppercase px-5 py-2 rounded-lg shadow-md active:scale-95 hover:bg-olive-900 cursor-pointer transition"
-          onClick={() => setToggle(true)}
+          onClick={() => setToggle((prev) => !prev)}
         >
           New Card
         </button>
